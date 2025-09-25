@@ -1,0 +1,49 @@
+.App {
+  text-align: center;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.App-header {
+  background-color: #0b3d2e;
+  color: white;
+  padding: 1rem;
+}
+
+.App-logo {
+  height: 80px;
+}
+
+.App-nav {
+  margin-top: 1px;
+}
+
+.App-nav a {
+  margin: 15px;
+  color: #fff176;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.App-nav a:hover {
+  text-decoration: underline;
+}
+
+.section {
+  padding: 2rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.App-footer {
+  background: #0b3d2e;
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.App-title{
+  font-size: 25px;
+  margin-top: 0;
+}
