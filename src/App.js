@@ -1,9 +1,30 @@
 import "./App.css";
 import logo from "./icon_white.png";
-import React, { useState, useEffect } from "react";
+import img1 from "./img1.png";
+import img2 from "./img2.png";
+import img3 from "./img3.png";
+import img4 from "./img4.png";
+import { useState, useEffect } from "react";
 import ImageReference from "./Image_reference.png";
 
 function App() {
+
+    const imagenes = [
+    "/imgs/e1.png",
+    "/imgs/e2.png",
+    "/imgs/e3.png",
+    "/imgs/e4.png",
+  ];
+
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % imagenes.length);
+    }, 3000); // cambia cada 3 segundos
+    return () => clearInterval(interval);
+  }, [imagenes.length]);
+
   useEffect(() => {
     const handleHashChange = () => {
       const hash = window.location.hash; // ej: "#inscripcion"
@@ -70,18 +91,62 @@ function App() {
 
       <main>
         <section id="inicio" className="section">
-          <h2>Inicio</h2>
-          <p>
-            Aquí aparecerán las actualizaciones más importantes del programa.
-          </p>
+           <div className="slider">
+            <img
+              src={imagenes[index]}
+              alt={`Imagen ${index + 1}`}
+              className="slider-img"
+            />
+          </div>
+          <div className="App-img">
+            <img src={logogreen} className="App-logop" alt="ElectroRoot Lab Logo" />
+          </div>
+          <div className='App-ini'>
+            <p>
+              Electroroot Lab es un programa gubernamental diseñado para 
+              reducir la brecha digital en comunidades rurales mediante 
+              la implementación de laboratorios móviles especializados en 
+              la enseñanza de tecnologías emergentes. 
+            </p>
+          </div>
+          <div class="info-columns">
+            <div class="column">
+              <img src={img1} className="App-imgc" alt="ElectroRoot Lab Logo" />
+              <h3>Libertades Digitales</h3>
+            </div>
+            <div class="column">
+              <img src={img2} className="App-imgc" alt="ElectroRoot Lab Logo" />
+              <h3>Tecnología y Medio Ambiente</h3>
+            </div>
+            <div class="column">
+              <img src={img3} className="App-imgc" alt="ElectroRoot Lab Logo" />
+              <h3>Diversidad e Inclusión Digital</h3>
+            </div>
+          </div>
         </section>
 
         <section id="programa" className="section">
-          <h2>Programa</h2>
-          <p>
-            Conoce más sobre los laboratorios móviles y su impacto en las
-            comunidades rurales.
-          </p>
+          <div className="App-content">
+            <div className="App-pr">
+              <h2>ELECTROROOT LAB</h2>          
+              <h2>¿Qué es ELECTROROOT LAB?</h2>          
+              <p>
+                Electroroot Lab es un programa gubernamental diseñado para 
+                reducir la brecha digital en comunidades rurales mediante 
+                la implementación de laboratorios móviles especializados en 
+                la enseñanza de tecnologías emergentes. 
+              </p>
+              <p>
+                Su enfoque principal se centra en la formación práctica en áreas 
+                de electrónica y desarrollo de software, buscando que los habitantes 
+                rurales adquieran competencias tecnológicas aplicables a su vida diaria, 
+                educativa y productiva.
+              </p>
+            </div>
+            <div>
+              <img src={img4} className="App-img4" alt="Laboratorio móvil Electroroot" />
+            </div>
+          </div>
         </section>
 
         <section id="pilares" className="section pilares">
