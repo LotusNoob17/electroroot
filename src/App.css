@@ -321,6 +321,5 @@ main {
   height: auto !important;      /* deja crecer en vertical */
   flex-shrink: 0 !important;    /* no se encoja */
   box-sizing: border-box;
-  overflow-y: visible !important; 
-  margin-top: 120px;            /* espacio por el header fijo */
+  overflow-y: visible !important;             /* espacio por el header fijo */
 }
