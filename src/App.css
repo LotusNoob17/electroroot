@@ -315,3 +315,12 @@ main {
 main {
   margin-top: 10%; 
 }
+
+.formacion-section {
+  min-width: 100% !important;   /* que ocupe todo el ancho normal */
+  height: auto !important;      /* deja crecer en vertical */
+  flex-shrink: 0 !important;    /* no se encoja */
+  box-sizing: border-box;
+  overflow-y: visible !important; 
+  margin-top: 120px;            /* espacio por el header fijo */
+}
