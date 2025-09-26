@@ -1,5 +1,6 @@
 import "./App.css";
 import logo from "./icon_white.png";
+import logogreen from "./icon_green.png";
 import img1 from "./img1.png";
 import img2 from "./img2.png";
 import img3 from "./img3.png";
@@ -109,7 +110,7 @@ function App() {
               la enseñanza de tecnologías emergentes. 
             </p>
           </div>
-          <div class="info-columns">
+          <div class="info-columns-i">
             <div class="column">
               <img src={img1} className="App-imgc" alt="ElectroRoot Lab Logo" />
               <h3>Libertades Digitales</h3>
