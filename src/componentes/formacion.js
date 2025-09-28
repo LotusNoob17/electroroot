@@ -1,4 +1,4 @@
-import "../App.css";
+import "../css/formacionestilo.css";
 import ImageReference from "../imagenes/Image_reference.png";
 
 function Formacion() {

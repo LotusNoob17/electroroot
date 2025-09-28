@@ -1,4 +1,4 @@
-import "../App.css";
+import "../css/pilaresestilo.css";
 
 function Pilares() {
   return (
