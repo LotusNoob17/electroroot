@@ -1,5 +1,4 @@
-import React from "react";
-import "../App.css"; // si usas el mismo CSS global
+import "../App.css";
 import ImageReference from "../imagenes/Image_reference.png";
 
 function Formacion() {
