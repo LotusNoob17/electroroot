@@ -17,14 +17,12 @@
 
 .App-nav {
   width: 100%;
-  /* height: auto; */
+  height: 100%;
   display: flex;
   align-items: center;
   background-color: #fff; 
-  position: fixed; 
+  position: relative; 
   border-bottom: 1px solid #0b3d2e;
-  padding: 8px 16px;
-  z-index: 1000;
 }
 .App-nav a {
   display: flex;
@@ -253,7 +251,6 @@ main {
   height: auto;
   padding-top: 20px;
   flex-shrink: 0;
-  margin-top: 60px;
 }
 
 /* Estilo para el nav fijo arriba */
@@ -425,5 +422,5 @@ main {
 .App-imgc {
   width: 120px;
   height: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
