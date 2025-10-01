@@ -5,7 +5,6 @@ function Formacion() {
   return (
     <section className="formacion-section" id="formacion">
       <h2 className="formacion-title">📚 Formación con Electroroot</h2>
-
       <div className="formacion-content">
         <div className="formacion-text">
           🚐 Nuestros <span>laboratorios móviles</span> se desplazan a las

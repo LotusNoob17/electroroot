@@ -59,7 +59,7 @@ function Inicio(){
           </div>
           <div className="App-ini">
             <p>
-              Electroroot Lab es un programa gubernamental diseñado para reducir
+              Electroroot Lab es un programa diseñado para reducir
               la brecha digital en comunidades rurales mediante la
               implementación de laboratorios móviles especializados en la
               enseñanza de tecnologías emergentes.
