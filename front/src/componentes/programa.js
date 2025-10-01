@@ -1,15 +1,16 @@
 import "../App.css";
 import img4 from "../img4.png";
+import img5 from "../img5.png";
+import img6 from "../img6.png";
 
 function Programa(){
     return(
         <section id="programa" className="section">
           <div className="App-content">
             <div className="App-pr">
-              <h2>ELECTROROOT LAB</h2>
               <h2>¿Qué es ELECTROROOT LAB?</h2>
               <p>
-                Electroroot Lab es un programa gubernamental diseñado para
+                Electroroot Lab es un programa diseñado para
                 reducir la brecha digital en comunidades rurales mediante la
                 implementación de laboratorios móviles especializados en la
                 enseñanza de tecnologías emergentes.
@@ -32,7 +33,7 @@ function Programa(){
           <div className="App-content">
             <div>
               <img
-                src={img4}
+                src={img5}
                 className="App-img4"
                 alt="Laboratorio móvil Electroroot"
               />
@@ -63,7 +64,7 @@ function Programa(){
             </div>
             <div>
               <img
-                src={img4}
+                src={img6}
                 className="App-img4"
                 alt="Laboratorio móvil Electroroot"
               />

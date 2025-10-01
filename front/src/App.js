@@ -38,7 +38,7 @@ function App() {
       </main>
 
       <footer className="App-footer">
-        <p>© 2025 Programa ELECTROROOT LAB - Gobierno de Colombia</p>
+        <p>© 2025 Programa ELECTROROOT LAB</p>
       </footer>
     </div>
   );
